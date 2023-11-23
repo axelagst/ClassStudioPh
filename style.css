@@ -1,0 +1,483 @@
+/*RESET*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Calibri, Geneva, Tahoma, Sanz-serif;
+}
+
+/*HEADER*/
+header {
+  height: 100px;
+  background: rgb(219, 219, 219);
+  padding: 0 50px;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  font-size: 40px;
+  text-decoration: none;
+}
+
+.menu a {
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0 10px;
+  transition: 0, 5s;
+}
+
+.mostrarMenu,
+.esconderMenu {
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+  transition: 0, 4s;
+}
+
+.mostrarMenu {
+  order: 1;
+}
+
+.menu a:hover,
+.mostrarMenu:hover,
+.esconderMenu:hover {
+  color: rgb(117, 129, 117);
+}
+
+#check {
+  display: none;
+}
+
+/*BANNER*/
+#banner {
+  padding: 0 50px;
+  background-image: url(./Images/backg.jpg);
+  height: 45vh;
+  background-size: cover;
+  background-position: center;
+}
+
+#banner::before {
+  content: "";
+  background: rgba(80, 80, 90, 0.3);
+  position: absolute;
+  width: 100%;
+  height: 45vh;
+  left: 0;
+}
+
+.contenidoBanner {
+  position: relative;
+  color: white;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contenidoBanner h3 {
+  font-size: 30px;
+  font-weight: 200;
+  padding: 10px 0px;
+}
+
+.contenidoBanner h3 span {
+  font-weight: 600;
+}
+
+.boton-empezar {
+  text-decoration: none;
+  color: white;
+  border: 1px solid grey;
+  margin-top: 20px;
+  padding: 10px 30px;
+  align-self: baseline;
+  transition: all 0.5s;
+}
+
+.boton-empezar:hover {
+  background: grey;
+}
+
+/*CREATORS*/
+#creators {
+  padding: 40px 30px 30px 30px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+/*EXPLORE*/
+#Explore {
+  padding: 40px 0px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+/*LICENSE SECTION*/
+#LicenseSection {
+  padding: 40px 60px 60px 60px;
+  display: flex;
+  justify-content: left;
+  text-align: left;
+  min-height: 100vh;
+}
+
+/*aboutUs1*/
+.containerAb {
+  padding: 40px 60px 60px 60px;
+  display: flex;
+  align-items: center;
+}
+
+.textAb {
+  flex: 1;
+  text-align: left;
+}
+.textAb h1{
+  font-size: 50px;
+}
+
+.imageAbUs {
+  flex: 1;
+  text-align: right;
+}
+
+.imageAbUs img {
+  max-width: 75%;
+  height: auto;
+}
+
+/*PEOPLE*/
+#ArtistsDesc {
+  padding: 30px 50px;
+  display: flex;
+  justify-content: baseline;
+  text-align: center;
+}
+
+#ArtistsDesc img {
+  border-radius: 100%;
+}
+
+#ArtistsDesc div {
+  padding: 30px 30px;
+}
+
+#ArtistsDesc div h4 {
+  color: rgb(71, 71, 71);
+  font-size: 20px;
+  margin: 15px 0px;
+}
+
+#ArtistsDesc div p {
+  color: grey;
+  font-size: 15px;
+}
+
+.buttonKnowMore {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 30px;
+  border: 1px solid grey;
+  color: grey;
+  font-size: 15px;
+  margin-top: 15px;
+  transition: all 0.5s;
+}
+
+.buttonKnowMore:hover {
+  background: grey;
+  color: white;
+}
+
+/*EXPLORE SECTION1*/
+#pictures1 {
+  padding: 30px 30px 10px 10px;
+  display: flex;
+  justify-content: left;
+  text-align: right;
+}
+
+#pictures1 img {
+  border-radius: 5%;
+}
+
+#pictures1 div {
+  padding: 10px 15px;
+}
+
+/*EXPLORE SECTION2*/
+#pictures2 {
+  padding: 30px 30px 10px 10px;
+  display: flex;
+  justify-content: left;
+  text-align: right;
+}
+
+#pictures2 img {
+  border-radius: 5%;
+}
+
+#pictures2 div {
+  padding: 10px 15px;
+}
+
+/*ICONS*/
+#icons{
+    padding: 0px 50px;
+    background: rgb(224, 224, 224);
+}
+
+/*EXAMPLE ABOUT US*/
+#AboutUsEx {
+  padding: 30px 50px;
+  display: flex;
+  justify-content: baseline;
+  text-align: center;
+}
+
+#AboutUsEx img {
+  border-radius: 2%;
+  max-width: 80%;
+}
+
+#AboutUsEx div {
+  padding: 30px 30px;
+}
+
+#AboutUsEx div h4 {
+  color: rgb(71, 71, 71);
+  font-size: 20px;
+  margin: 15px 0px;
+}
+
+#AboutUsEx div p {
+  color: grey;
+  font-size: 15px;
+}
+
+
+
+
+#iconsContent{
+    padding: 20px 50px 0px 50px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+#iconsContent div{
+  flex: 1;
+  margin: 20px 0px;
+  border-right: 1px solid grey;
+  border-left: 1px solid grey;
+}
+
+#iconsContent div i{
+  color: black;
+}
+
+#iconsContent div h4{
+  color: black;
+  font-size: 20px;
+  font-weight: 100%;
+  margin: 10px 0px;
+}
+
+#iconsContent div p{
+  color: rgb(77, 77, 77);
+  font-size: 15px;
+}
+
+.button_icons{
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+/*FORMS*/
+#contactBanner{
+  background: white;
+  padding-bottom: 50px 0px;
+  color: white;
+}
+
+#contactBanner h4{
+  text-align: center;
+  font-size: 20px;
+  font-weight: 200;
+  margin-bottom: 20px;
+}
+
+#contactBanner form{
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.form_data{
+  display: flex;
+}
+
+.form_data div{
+  padding: 10px;
+  flex: 1;
+}
+
+.form_data label{
+  display: block;
+  margin-bottom: 10px;
+}
+
+.message label{
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form_data input,
+.message textarea{
+  background: rgb(238, 238, 238);
+  border-radius: 10px;
+  border: 2px solid rgb(146, 146, 146);
+  padding: 10px 5px;
+  outline: 0;
+  color: rgb(77, 77, 77);
+  width: 100%;
+}
+
+.form_data input:focus,
+.message textarea:focus{
+  border-color: rgb(77, 77, 77);
+  box-shadow: 0 0 0 1px grey;
+}
+
+.form_data input::placeholder,
+.message textarea::placeholder{
+  color: rgb(77, 77, 77);
+}
+
+.message{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.buttonSendMessage{
+  display: block;
+  border: 1px white;
+  color: white;
+  text-align: center;
+  transition: 0.4s;
+}
+
+.buttonSendMessage .buttonKnowMore:hover{
+  background: grey;
+}
+
+/*FOOTER*/
+  footer{
+    background: grey;
+    color: white;
+    font-size: 10px;
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+    left: 0;
+    bottom: 0;
+    margin-top: auto;    
+  }
+
+/*RESPONSIVE*/
+@media (max-width: 768px) {
+  /*HEADER*/
+  .mostrarMenu,
+  .esconderMenu {
+    display: block;
+  }
+  .menu {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(76, 68, 90);
+    right: -100%;
+    top: 0;
+    text-align: center;
+    padding: 100px 0px;
+    z-index: 100;
+    transition: 1s;
+  }
+  .menu a {
+    display: block;
+    padding: 20px;
+  }
+  .esconderMenu {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
+  #check:checked ~ .menu {
+    right: 0;
+  }
+
+ /*CREATORS*/
+ #creators {
+    display: flex;
+  }
+
+  /*LICENSESECTION*/
+  #LicenseSection {
+    display: flex;
+  }
+ 
+  /*LICENSESECTION*/
+  #AboutUs {
+    display: flex;
+  }
+
+  /*ARTISTDESC*/
+  #ArtistsDesc {
+    flex-direction: column;
+  }
+
+  /*ABOUTUSEXAMPLE*/
+  #AboutUsEx {
+    flex-direction: column;
+  }
+
+  /*ABOUTUS1*/
+  .containerAb {
+    flex-direction: column;
+  }
+
+  /*WALL PICTURES*/
+  #pictures1 {
+    flex-direction: column;
+  }
+
+  /*WALL PICTURES2*/
+  #pictures2 {
+    flex-direction: column;
+  }
+
+  /*ICONS*/
+  
+  #iconsContent{
+    flex-direction: column;
+  }
+  
+  #iconsContent div{
+    border: none;
+  }
+
+  /*FORM*/
+  .form_data{
+    flex-direction: column;
+  }
+  
+
+}
